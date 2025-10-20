@@ -19,8 +19,8 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.9.2
-
+  sdk: ">=3.9.2 <4.0.0"
+  flutter: ">=3.35.0 <4.0.0"
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
 # consider running `flutter pub upgrade --major-versions`. Alternatively,
@@ -34,6 +34,45 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+
+
+  ### [ Dart Libraries ] ###
+
+  json_annotation: 4.9.0
+  # json serialization
+  # https://pub.dev/packages/json_annotation
+
+  json_serializable: 6.11.1
+  # json serialization
+  # https://pub.dev/packages/json_serializable
+
+  rxdart: 0.28.0
+  # rx helper
+  # https://pub.dev/packages/rxdart
+
+  dio: 5.9.0
+  # http request helper
+  # https://pub.dev/packages/dio
+
+  dio_smart_retry: 7.0.1
+  # retry asynchronous functions
+  # https://pub.dev/packages/retry
+
+  dio_cache_interceptor: 4.0.5
+  # dio network cache helper
+  # https://pub.dev/packages/dio_cache_interceptor
+
+  async: 2.13.0
+  # async helper
+  # https://pub.dev/packages/async
+
+  cached_network_image: 3.4.1
+  # network image loader
+  # https://pub.dev/packages/cached_network_image
+
+  photo_view: 0.15.0
+  # image viewer helper
+  # https://pub.dev/packages/photo_view
 
 dev_dependencies:
   flutter_test:
